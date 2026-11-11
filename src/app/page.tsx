@@ -39,14 +39,7 @@ export default function Home() {
           </div>
         </div>
 
-        <form id="audit" className="rounded-3xl bg-[#10253e] p-7 text-white shadow-2xl shadow-slate-900/15 sm:p-9">
-          <p className="text-sm font-semibold text-[#36d5cb]">START YOUR FREE AUDIT</p>
-          <h2 className="mt-3 text-3xl font-bold tracking-tight">Your business deserves a clearer next step.</h2>
-          <label className="mt-8 block text-sm font-medium" htmlFor="website">Website address</label>
-          <input id="website" name="website" type="url" placeholder="https://yourbusiness.com" className="mt-2 w-full rounded-xl border border-white/15 bg-white/10 px-4 py-4 text-white outline-none placeholder:text-slate-400 focus:border-[#36d5cb]" />
-          <button type="submit" className="mt-4 w-full rounded-xl bg-[#10bdb5] px-5 py-4 font-bold text-[#082039] transition hover:bg-[#36d5cb]">Check my website <span aria-hidden="true">→</span></button>
-          <p className="mt-4 text-center text-xs leading-5 text-slate-400">Free score and top issues. Your full report is ready when you are.</p>
-        </form>
+        <AuditForm />
       </section>
 
       <section id="what-we-check" className="border-y border-slate-200 bg-white">
@@ -92,3 +85,5 @@ export default function Home() {
     </main>
   );
 }
+import AuditForm from "@/components/audit-form";
+
